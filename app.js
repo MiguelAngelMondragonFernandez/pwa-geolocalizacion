@@ -13,7 +13,7 @@ const btnDetener = $("#btn-detener");
 
 let watchId = null;
 
-// Mostrar estado inicial de permisos si está disponible
+// Mostrar estado inicial de permisos si está disponibl
 if ("permissions" in navigator && navigator.permissions.query) {
   navigator.permissions.query({ name: "geolocation" }).then((result) => {
     permisoSpan.textContent = result.state;
